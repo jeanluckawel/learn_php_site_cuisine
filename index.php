@@ -1,8 +1,13 @@
 <?php
-$isEnabled = true;
-if($isEnabled){
-    echo "<h1>hello </h1>";
-}
-else{
-    echo "<h2>buy</h2>";
+$garde=10;
+switch ($garde){
+    case 2:
+        echo "lol codeur";
+        break;
+    case 3:
+        echo "tlc";
+        break;
+    default:
+        echo "pas de chance";
+
 }
