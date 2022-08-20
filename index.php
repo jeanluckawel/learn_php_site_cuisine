@@ -1,7 +1,8 @@
 <?php
 $isEnabled = true;
-$isOwner = true;
-if ($isEnabled && $isOwner){
+$isOwner = false;
+$isAdmin = true;
+if ($isEnabled && $isOwner ||$isAdmin){
     echo 'acces a la recette valider';
 }
 else{
