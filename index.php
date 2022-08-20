@@ -1,10 +1,8 @@
 <?php
 $isEnabled = true;
-$isOwner = false;
-$isAdmin = true;
-if ($isEnabled && $isOwner ||$isAdmin){
-    echo 'acces a la recette valider';
+if($isEnabled){
+    echo "<h1>hello </h1>";
 }
 else{
-    echo "acces a la recette interdite";
+    echo "<h2>buy</h2>";
 }
