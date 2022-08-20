@@ -1,10 +1,9 @@
 <?php
 $isEnabled = true;
-
-if ($isEnabled != false) {
-    echo "Vous êtes autorisé(e) à accéder au site ✅";
+$isOwner = true;
+if ($isEnabled && $isOwner){
+    echo 'acces a la recette valider';
 }
 else{
-    echo "vous n'estes pas autorise";
+    echo "acces a la recette interdite";
 }
-?>
