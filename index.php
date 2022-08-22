@@ -1,17 +1,11 @@
-<?php
-$lignes=1;
-while ($lignes<=100){
-    echo "<h3>suis un developeur web</h3>";
-    $lignes++;
-}
-?>
-<style>
-    h1,h3{
-        font-family: "open sans";
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }
-</style>
-<?php
-echo "<h1>hello</h1>";
+<form action="contact.php" method="GET">
+	<div>
+		<label for="email">Email</label>
+		<input type="email" name="email">
+	</div>
+    <div>
+        <label for="message">taper votre message</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="taper votre message"></textarea>
+    </div>
+    <button type="submit">Envoyer</button>
+</form>
