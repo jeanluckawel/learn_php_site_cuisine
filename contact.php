@@ -1,7 +1,9 @@
 <?php
 
 // submit_contact.php
-if (!isset($_POST['email']) || !isset($_POST['message']))
+if (!isset($_POST['email']) || !isset($_POST['message'])
+    || (empty($_POST['email']))
+)
 {
 	echo('Il faut un email et un message pour soumettre le formulaire.');
     return;
@@ -25,7 +27,7 @@ $message = $_POST['message'];
     <body>
         <div class="container">
     
-        <?php include_once('header.php'); ?>
+   
             <h1>Message bien reçu !</h1>
             
             <div class="card">

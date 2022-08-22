@@ -1,8 +1,7 @@
 
 
-<form action="contact.php" method="GET">
+<form action="contact.php" method="post">
 	<div>
-    <input type="text" value="jlk" name="nom">
 		<label for="email">Email</label>
 		<input type="email" name="email">
 	</div>
